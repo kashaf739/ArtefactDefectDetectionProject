@@ -1,0 +1,64 @@
+{
+  "false_positives": {
+    "count": 16,
+    "categories": {
+      "capsule": 8,
+      "grid": 1,
+      "pill": 4,
+      "screw": 3
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_capsule_003.png",
+        "category": "capsule",
+        "confidence": 0.5791313836649982
+      },
+      {
+        "image_path": "fp_2_capsule_010.png",
+        "category": "capsule",
+        "confidence": 0.5551406411842813
+      },
+      {
+        "image_path": "fp_3_capsule_004.png",
+        "category": "capsule",
+        "confidence": 0.589150251914515
+      },
+      {
+        "image_path": "fp_4_capsule_005.png",
+        "category": "capsule",
+        "confidence": 0.6257885120051255
+      },
+      {
+        "image_path": "fp_5_capsule_011.png",
+        "category": "capsule",
+        "confidence": 0.589563441545208
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 3,
+    "categories": {
+      "capsule": 1,
+      "transistor": 2
+    },
+    "examples": [
+      {
+        "image_path": "fn_1_capsule_022.png",
+        "category": "capsule",
+        "confidence": 0.5314566675416975
+      },
+      {
+        "image_path": "fn_2_transistor_000.png",
+        "category": "transistor",
+        "confidence": 0.5753004162417517
+      },
+      {
+        "image_path": "fn_3_transistor_008.png",
+        "category": "transistor",
+        "confidence": 0.5598628708247584
+      }
+    ]
+  },
+  "total_errors": 19,
+  "error_rate": 0.011014492753623189
+}

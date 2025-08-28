@@ -1,0 +1,91 @@
+{
+  "false_positives": {
+    "count": 440,
+    "categories": {
+      "bottle": 20,
+      "cable": 57,
+      "capsule": 22,
+      "carpet": 28,
+      "grid": 17,
+      "hazelnut": 40,
+      "leather": 32,
+      "metal_nut": 22,
+      "pill": 26,
+      "screw": 35,
+      "tile": 28,
+      "toothbrush": 12,
+      "transistor": 60,
+      "wood": 10,
+      "zipper": 31
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_bottle_002.png",
+        "category": "bottle",
+        "confidence": 0.6847917437553406
+      },
+      {
+        "image_path": "fp_2_bottle_016.png",
+        "category": "bottle",
+        "confidence": 0.6622323393821716
+      },
+      {
+        "image_path": "fp_3_bottle_017.png",
+        "category": "bottle",
+        "confidence": 0.6649819016456604
+      },
+      {
+        "image_path": "fp_4_bottle_003.png",
+        "category": "bottle",
+        "confidence": 0.7014464735984802
+      },
+      {
+        "image_path": "fp_5_bottle_015.png",
+        "category": "bottle",
+        "confidence": 0.6919910311698914
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 64,
+    "categories": {
+      "cable": 1,
+      "capsule": 8,
+      "grid": 9,
+      "leather": 3,
+      "pill": 1,
+      "screw": 12,
+      "tile": 13,
+      "wood": 17
+    },
+    "examples": [
+      {
+        "image_path": "fn_1_cable_000.png",
+        "category": "cable",
+        "confidence": 0.5141922235488892
+      },
+      {
+        "image_path": "fn_2_capsule_021.png",
+        "category": "capsule",
+        "confidence": 0.5135060548782349
+      },
+      {
+        "image_path": "fn_3_capsule_002.png",
+        "category": "capsule",
+        "confidence": 0.526923656463623
+      },
+      {
+        "image_path": "fn_4_capsule_007.png",
+        "category": "capsule",
+        "confidence": 0.5166683197021484
+      },
+      {
+        "image_path": "fn_5_capsule_006.png",
+        "category": "capsule",
+        "confidence": 0.5275922417640686
+      }
+    ]
+  },
+  "total_errors": 504,
+  "error_rate": 0.2921739130434783
+}

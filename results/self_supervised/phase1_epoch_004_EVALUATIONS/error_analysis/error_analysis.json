@@ -1,0 +1,60 @@
+{
+  "false_positives": {
+    "count": 18,
+    "categories": {
+      "capsule": 10,
+      "grid": 2,
+      "pill": 4,
+      "screw": 1,
+      "toothbrush": 1
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_capsule_003.png",
+        "category": "capsule",
+        "confidence": 0.6908863638457203
+      },
+      {
+        "image_path": "fp_2_capsule_010.png",
+        "category": "capsule",
+        "confidence": 0.6070830350516457
+      },
+      {
+        "image_path": "fp_3_capsule_004.png",
+        "category": "capsule",
+        "confidence": 0.7069197312669742
+      },
+      {
+        "image_path": "fp_4_capsule_005.png",
+        "category": "capsule",
+        "confidence": 0.6053332725819591
+      },
+      {
+        "image_path": "fp_5_capsule_011.png",
+        "category": "capsule",
+        "confidence": 0.6454070963992908
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 2,
+    "categories": {
+      "capsule": 1,
+      "transistor": 1
+    },
+    "examples": [
+      {
+        "image_path": "fn_1_capsule_022.png",
+        "category": "capsule",
+        "confidence": 0.6934192453615606
+      },
+      {
+        "image_path": "fn_2_transistor_000.png",
+        "category": "transistor",
+        "confidence": 0.5955303707578401
+      }
+    ]
+  },
+  "total_errors": 20,
+  "error_rate": 0.011594202898550725
+}

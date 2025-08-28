@@ -1,0 +1,25 @@
+{
+  "model_name": "phase1_epoch_006",
+  "performance_summary": {
+    "f1_score": 0.9920886075949367,
+    "accuracy": 0.9884057971014493,
+    "auc_roc": 0.9993225370476914,
+    "precision": 0.9874015748031496,
+    "recall": 0.9968203497615262
+  },
+  "error_analysis": {
+    "total_errors": 20,
+    "error_rate": 0.011594202898550725,
+    "false_positive_rate": 5.333333333333333,
+    "false_negative_rate": 1.3333333333333333
+  },
+  "strengths": [
+    "Good F1 score (>0.8)",
+    "High recall - good at detecting anomalies",
+    "High precision - few false alarms"
+  ],
+  "weaknesses": [],
+  "recommendations": [
+    "Adjust decision threshold to reduce false positives"
+  ]
+}

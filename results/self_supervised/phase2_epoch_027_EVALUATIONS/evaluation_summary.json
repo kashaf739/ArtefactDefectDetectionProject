@@ -1,0 +1,140 @@
+{
+  "model_name": "phase2_epoch_027",
+  "model_type": "phase2",
+  "evaluation_date": "2025-08-21 15:21:30",
+  "metrics": {
+    "accuracy": 0.7275362318840579,
+    "f1_score": 0.8417508417508418,
+    "precision": 0.7301401869158879,
+    "recall": 0.9936406995230525,
+    "confusion_matrix": [
+      [
+        5,
+        462
+      ],
+      [
+        8,
+        1250
+      ]
+    ],
+    "true_negatives": 5,
+    "false_positives": 462,
+    "false_negatives": 8,
+    "true_positives": 1250,
+    "specificity": 0.010706638115631691,
+    "npv": 0.38461538461538464,
+    "fpr": 0.9892933618843683,
+    "fnr": 0.006359300476947536,
+    "auc_roc": 0.6331538113248656,
+    "auc_pr": 0.8219223688876911
+  },
+  "error_analysis": {
+    "false_positives": {
+      "count": 462,
+      "categories": {
+        "bottle": 20,
+        "cable": 57,
+        "capsule": 23,
+        "carpet": 28,
+        "grid": 18,
+        "hazelnut": 40,
+        "leather": 32,
+        "metal_nut": 22,
+        "pill": 26,
+        "screw": 41,
+        "tile": 33,
+        "toothbrush": 12,
+        "transistor": 60,
+        "wood": 18,
+        "zipper": 32
+      },
+      "examples": [
+        {
+          "image_path": "fp_1_bottle_002.png",
+          "category": "bottle",
+          "confidence": 0.8542465567588806
+        },
+        {
+          "image_path": "fp_2_bottle_016.png",
+          "category": "bottle",
+          "confidence": 0.8284248113632202
+        },
+        {
+          "image_path": "fp_3_bottle_017.png",
+          "category": "bottle",
+          "confidence": 0.8102127313613892
+        },
+        {
+          "image_path": "fp_4_bottle_003.png",
+          "category": "bottle",
+          "confidence": 0.842495858669281
+        },
+        {
+          "image_path": "fp_5_bottle_015.png",
+          "category": "bottle",
+          "confidence": 0.8439900875091553
+        }
+      ]
+    },
+    "false_negatives": {
+      "count": 8,
+      "categories": {
+        "cable": 1,
+        "grid": 7
+      },
+      "examples": [
+        {
+          "image_path": "fn_1_cable_000.png",
+          "category": "cable",
+          "confidence": 0.5146637558937073
+        },
+        {
+          "image_path": "fn_2_grid_001.png",
+          "category": "grid",
+          "confidence": 0.5087244510650635
+        },
+        {
+          "image_path": "fn_3_grid_000.png",
+          "category": "grid",
+          "confidence": 0.5699080228805542
+        },
+        {
+          "image_path": "fn_4_grid_004.png",
+          "category": "grid",
+          "confidence": 0.5658764839172363
+        },
+        {
+          "image_path": "fn_5_grid_005.png",
+          "category": "grid",
+          "confidence": 0.6920032501220703
+        }
+      ]
+    },
+    "total_errors": 470,
+    "error_rate": 0.27246376811594203
+  },
+  "key_findings": {
+    "model_name": "phase2_epoch_027",
+    "performance_summary": {
+      "f1_score": 0.8417508417508418,
+      "accuracy": 0.7275362318840579,
+      "auc_roc": 0.6331538113248656,
+      "precision": 0.7301401869158879,
+      "recall": 0.9936406995230525
+    },
+    "error_analysis": {
+      "total_errors": 470,
+      "error_rate": 0.27246376811594203,
+      "false_positive_rate": 154.0,
+      "false_negative_rate": 2.6666666666666665
+    },
+    "strengths": [
+      "Good F1 score (>0.8)",
+      "High recall - good at detecting anomalies"
+    ],
+    "weaknesses": [],
+    "recommendations": [
+      "Adjust decision threshold to reduce false positives"
+    ]
+  }
+}

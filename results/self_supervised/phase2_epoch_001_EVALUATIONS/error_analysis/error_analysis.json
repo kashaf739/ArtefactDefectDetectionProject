@@ -1,0 +1,95 @@
+{
+  "false_positives": {
+    "count": 397,
+    "categories": {
+      "bottle": 20,
+      "cable": 57,
+      "capsule": 18,
+      "carpet": 21,
+      "grid": 15,
+      "hazelnut": 35,
+      "leather": 31,
+      "metal_nut": 22,
+      "pill": 26,
+      "screw": 30,
+      "tile": 17,
+      "toothbrush": 12,
+      "transistor": 60,
+      "wood": 6,
+      "zipper": 27
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_bottle_002.png",
+        "category": "bottle",
+        "confidence": 0.6216553449630737
+      },
+      {
+        "image_path": "fp_2_bottle_016.png",
+        "category": "bottle",
+        "confidence": 0.6046217679977417
+      },
+      {
+        "image_path": "fp_3_bottle_017.png",
+        "category": "bottle",
+        "confidence": 0.6173562407493591
+      },
+      {
+        "image_path": "fp_4_bottle_003.png",
+        "category": "bottle",
+        "confidence": 0.6495757102966309
+      },
+      {
+        "image_path": "fp_5_bottle_015.png",
+        "category": "bottle",
+        "confidence": 0.6402169466018677
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 185,
+    "categories": {
+      "cable": 1,
+      "capsule": 20,
+      "carpet": 21,
+      "grid": 10,
+      "hazelnut": 4,
+      "leather": 7,
+      "metal_nut": 3,
+      "pill": 3,
+      "screw": 39,
+      "tile": 48,
+      "wood": 23,
+      "zipper": 6
+    },
+    "examples": [
+      {
+        "image_path": "fn_1_cable_000.png",
+        "category": "cable",
+        "confidence": 0.5322372317314148
+      },
+      {
+        "image_path": "fn_2_capsule_021.png",
+        "category": "capsule",
+        "confidence": 0.545504629611969
+      },
+      {
+        "image_path": "fn_3_capsule_018.png",
+        "category": "capsule",
+        "confidence": 0.5346255302429199
+      },
+      {
+        "image_path": "fn_4_capsule_002.png",
+        "category": "capsule",
+        "confidence": 0.5595369338989258
+      },
+      {
+        "image_path": "fn_5_capsule_003.png",
+        "category": "capsule",
+        "confidence": 0.5079158544540405
+      }
+    ]
+  },
+  "total_errors": 582,
+  "error_rate": 0.3373913043478261
+}

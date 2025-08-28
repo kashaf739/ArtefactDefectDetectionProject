@@ -1,0 +1,28 @@
+{
+  "dataset_summary": {
+    "total_categories": 15,
+    "total_images": 5354,
+    "total_good_images": 4096,
+    "total_defective_images": 1258,
+    "good_percentage": 76.50354874859919,
+    "defective_percentage": 23.49645125140082,
+    "average_imbalance_ratio": 3.0089832719811267,
+    "max_imbalance_ratio": 5.423076920991124,
+    "min_imbalance_ratio": 0.6666666665555555,
+    "max_imbalance_category": "pill"
+  },
+  "image_properties": {
+    "average_width": 964.5077805077805,
+    "average_height": 964.5077805077805,
+    "width_std": 101.32339548298525,
+    "height_std": 101.32339548298525,
+    "good_brightness_mean": 102.19987107812811,
+    "defective_brightness_mean": 106.49107257330877
+  },
+  "defect_analysis": {
+    "total_defect_types": 48,
+    "most_common_defect": "color",
+    "category_with_most_defects": "pill"
+  },
+  "analysis_date": "2025-08-24 20:53:54"
+}

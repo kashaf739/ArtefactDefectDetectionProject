@@ -1,0 +1,85 @@
+{
+  "false_positives": {
+    "count": 462,
+    "categories": {
+      "bottle": 20,
+      "cable": 57,
+      "capsule": 23,
+      "carpet": 28,
+      "grid": 18,
+      "hazelnut": 40,
+      "leather": 32,
+      "metal_nut": 22,
+      "pill": 26,
+      "screw": 41,
+      "tile": 33,
+      "toothbrush": 12,
+      "transistor": 60,
+      "wood": 18,
+      "zipper": 32
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_bottle_002.png",
+        "category": "bottle",
+        "confidence": 0.8544479012489319
+      },
+      {
+        "image_path": "fp_2_bottle_016.png",
+        "category": "bottle",
+        "confidence": 0.8286280035972595
+      },
+      {
+        "image_path": "fp_3_bottle_017.png",
+        "category": "bottle",
+        "confidence": 0.8104002475738525
+      },
+      {
+        "image_path": "fp_4_bottle_003.png",
+        "category": "bottle",
+        "confidence": 0.8426603674888611
+      },
+      {
+        "image_path": "fp_5_bottle_015.png",
+        "category": "bottle",
+        "confidence": 0.8441798686981201
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 8,
+    "categories": {
+      "cable": 1,
+      "grid": 7
+    },
+    "examples": [
+      {
+        "image_path": "fn_1_cable_000.png",
+        "category": "cable",
+        "confidence": 0.5147639513015747
+      },
+      {
+        "image_path": "fn_2_grid_001.png",
+        "category": "grid",
+        "confidence": 0.5086566805839539
+      },
+      {
+        "image_path": "fn_3_grid_000.png",
+        "category": "grid",
+        "confidence": 0.5699759125709534
+      },
+      {
+        "image_path": "fn_4_grid_004.png",
+        "category": "grid",
+        "confidence": 0.5660194158554077
+      },
+      {
+        "image_path": "fn_5_grid_005.png",
+        "category": "grid",
+        "confidence": 0.6921640634536743
+      }
+    ]
+  },
+  "total_errors": 470,
+  "error_rate": 0.27246376811594203
+}

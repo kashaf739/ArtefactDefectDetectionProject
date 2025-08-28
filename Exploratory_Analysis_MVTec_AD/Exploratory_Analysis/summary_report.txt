@@ -1,0 +1,32 @@
+MVTec-AD Dataset Exploratory Analysis Summary
+============================================================
+
+Dataset Overview:
+- Total Categories: 15
+- Total Images: 5,354
+- Good Images: 4,096 (76.5%)
+- Defective Images: 1,258 (23.5%)
+- Average Imbalance Ratio: 3.01
+- Maximum Imbalance Ratio: 5.42 (in pill)
+
+Image Properties:
+- Average Image Size: 965 x 965
+- Good Images Brightness (mean): 102.20
+- Defective Images Brightness (mean): 106.49
+
+Defect Analysis:
+- Total Defect Types: 48
+- Most Common Defect Type: color
+- Category with Most Defects: pill
+
+Key Findings:
+1. The dataset exhibits significant class imbalance, with some categories having up to 5.4x more defective images than good images.
+2. This imbalance likely contributed to the high false positive rate in Phase 2 model training.
+3. Image sizes vary across categories, which may require careful resizing strategies.
+4. Defective images show different brightness characteristics compared to good images.
+
+Recommendations for Model Training:
+1. Implement class balancing techniques (weighted loss, balanced sampling)
+2. Optimize decision threshold to reduce false positives
+3. Consider category-specific approaches for highly imbalanced categories
+4. Use data augmentation to address class imbalance

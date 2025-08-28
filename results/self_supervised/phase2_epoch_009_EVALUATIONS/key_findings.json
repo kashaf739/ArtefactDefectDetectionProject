@@ -1,0 +1,24 @@
+{
+  "model_name": "phase2_epoch_009",
+  "performance_summary": {
+    "f1_score": 0.8407557354925776,
+    "accuracy": 0.7263768115942029,
+    "auc_roc": 0.5928464678307228,
+    "precision": 0.7303634232121923,
+    "recall": 0.9904610492845787
+  },
+  "error_analysis": {
+    "total_errors": 472,
+    "error_rate": 0.2736231884057971,
+    "false_positive_rate": 153.33333333333334,
+    "false_negative_rate": 4.0
+  },
+  "strengths": [
+    "Good F1 score (>0.8)",
+    "High recall - good at detecting anomalies"
+  ],
+  "weaknesses": [],
+  "recommendations": [
+    "Adjust decision threshold to reduce false positives"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "model_name": "phase1_epoch_004",
+  "model_type": "phase1",
+  "evaluation_date": "2025-08-21 11:48:39",
+  "metrics": {
+    "accuracy": 0.9884057971014493,
+    "f1_score": 0.9921011058451816,
+    "precision": 0.9858712715855573,
+    "recall": 0.9984101748807631,
+    "confusion_matrix": [
+      [
+        449,
+        18
+      ],
+      [
+        2,
+        1256
+      ]
+    ],
+    "true_negatives": 449,
+    "false_positives": 18,
+    "false_negatives": 2,
+    "true_positives": 1256,
+    "specificity": 0.961456102783726,
+    "npv": 0.9955654101995566,
+    "fpr": 0.03854389721627409,
+    "fnr": 0.001589825119236884,
+    "auc_roc": 0.9995693514398641,
+    "auc_pr": 0.9998420027021696
+  },
+  "error_analysis": {
+    "false_positives": {
+      "count": 18,
+      "categories": {
+        "capsule": 10,
+        "grid": 2,
+        "pill": 4,
+        "screw": 1,
+        "toothbrush": 1
+      },
+      "examples": [
+        {
+          "image_path": "fp_1_capsule_003.png",
+          "category": "capsule",
+          "confidence": 0.6908863638457203
+        },
+        {
+          "image_path": "fp_2_capsule_010.png",
+          "category": "capsule",
+          "confidence": 0.6070830350516457
+        },
+        {
+          "image_path": "fp_3_capsule_004.png",
+          "category": "capsule",
+          "confidence": 0.7069197312669742
+        },
+        {
+          "image_path": "fp_4_capsule_005.png",
+          "category": "capsule",
+          "confidence": 0.6053332725819591
+        },
+        {
+          "image_path": "fp_5_capsule_011.png",
+          "category": "capsule",
+          "confidence": 0.6454070963992908
+        }
+      ]
+    },
+    "false_negatives": {
+      "count": 2,
+      "categories": {
+        "capsule": 1,
+        "transistor": 1
+      },
+      "examples": [
+        {
+          "image_path": "fn_1_capsule_022.png",
+          "category": "capsule",
+          "confidence": 0.6934192453615606
+        },
+        {
+          "image_path": "fn_2_transistor_000.png",
+          "category": "transistor",
+          "confidence": 0.5955303707578401
+        }
+      ]
+    },
+    "total_errors": 20,
+    "error_rate": 0.011594202898550725
+  },
+  "key_findings": {
+    "model_name": "phase1_epoch_004",
+    "performance_summary": {
+      "f1_score": 0.9921011058451816,
+      "accuracy": 0.9884057971014493,
+      "auc_roc": 0.9995693514398641,
+      "precision": 0.9858712715855573,
+      "recall": 0.9984101748807631
+    },
+    "error_analysis": {
+      "total_errors": 20,
+      "error_rate": 0.011594202898550725,
+      "false_positive_rate": 6.0,
+      "false_negative_rate": 0.6666666666666666
+    },
+    "strengths": [
+      "Good F1 score (>0.8)",
+      "High recall - good at detecting anomalies",
+      "High precision - few false alarms"
+    ],
+    "weaknesses": [],
+    "recommendations": [
+      "Adjust decision threshold to reduce false positives"
+    ]
+  }
+}

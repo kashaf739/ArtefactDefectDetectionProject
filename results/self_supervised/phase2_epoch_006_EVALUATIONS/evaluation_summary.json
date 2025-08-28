@@ -1,0 +1,142 @@
+{
+  "model_name": "phase2_epoch_006",
+  "model_type": "phase2",
+  "evaluation_date": "2025-08-21 12:55:54",
+  "metrics": {
+    "accuracy": 0.7240579710144928,
+    "f1_score": 0.8389715832205683,
+    "precision": 0.7302709069493521,
+    "recall": 0.985691573926868,
+    "confusion_matrix": [
+      [
+        9,
+        458
+      ],
+      [
+        18,
+        1240
+      ]
+    ],
+    "true_negatives": 9,
+    "false_positives": 458,
+    "false_negatives": 18,
+    "true_positives": 1240,
+    "specificity": 0.019271948608137045,
+    "npv": 0.3333333333333333,
+    "fpr": 0.9807280513918629,
+    "fnr": 0.014308426073131956,
+    "auc_roc": 0.5675573545582362,
+    "auc_pr": 0.7903752438737706
+  },
+  "error_analysis": {
+    "false_positives": {
+      "count": 458,
+      "categories": {
+        "bottle": 20,
+        "cable": 58,
+        "capsule": 23,
+        "carpet": 28,
+        "grid": 17,
+        "hazelnut": 40,
+        "leather": 32,
+        "metal_nut": 22,
+        "pill": 26,
+        "screw": 41,
+        "tile": 31,
+        "toothbrush": 12,
+        "transistor": 60,
+        "wood": 16,
+        "zipper": 32
+      },
+      "examples": [
+        {
+          "image_path": "fp_1_bottle_002.png",
+          "category": "bottle",
+          "confidence": 0.7548370361328125
+        },
+        {
+          "image_path": "fp_2_bottle_016.png",
+          "category": "bottle",
+          "confidence": 0.7286640405654907
+        },
+        {
+          "image_path": "fp_3_bottle_017.png",
+          "category": "bottle",
+          "confidence": 0.721024751663208
+        },
+        {
+          "image_path": "fp_4_bottle_003.png",
+          "category": "bottle",
+          "confidence": 0.7596634030342102
+        },
+        {
+          "image_path": "fp_5_bottle_015.png",
+          "category": "bottle",
+          "confidence": 0.7516828179359436
+        }
+      ]
+    },
+    "false_negatives": {
+      "count": 18,
+      "categories": {
+        "grid": 8,
+        "screw": 1,
+        "tile": 4,
+        "wood": 5
+      },
+      "examples": [
+        {
+          "image_path": "fn_1_grid_001.png",
+          "category": "grid",
+          "confidence": 0.5335997939109802
+        },
+        {
+          "image_path": "fn_2_grid_000.png",
+          "category": "grid",
+          "confidence": 0.5612469911575317
+        },
+        {
+          "image_path": "fn_3_grid_004.png",
+          "category": "grid",
+          "confidence": 0.5346465110778809
+        },
+        {
+          "image_path": "fn_4_grid_005.png",
+          "category": "grid",
+          "confidence": 0.6528894901275635
+        },
+        {
+          "image_path": "fn_5_grid_009.png",
+          "category": "grid",
+          "confidence": 0.5997201204299927
+        }
+      ]
+    },
+    "total_errors": 476,
+    "error_rate": 0.27594202898550724
+  },
+  "key_findings": {
+    "model_name": "phase2_epoch_006",
+    "performance_summary": {
+      "f1_score": 0.8389715832205683,
+      "accuracy": 0.7240579710144928,
+      "auc_roc": 0.5675573545582362,
+      "precision": 0.7302709069493521,
+      "recall": 0.985691573926868
+    },
+    "error_analysis": {
+      "total_errors": 476,
+      "error_rate": 0.27594202898550724,
+      "false_positive_rate": 152.66666666666666,
+      "false_negative_rate": 6.0
+    },
+    "strengths": [
+      "Good F1 score (>0.8)",
+      "High recall - good at detecting anomalies"
+    ],
+    "weaknesses": [],
+    "recommendations": [
+      "Adjust decision threshold to reduce false positives"
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "model_name": "phase1_epoch_002",
+  "model_type": "phase1",
+  "evaluation_date": "2025-08-21 11:35:29",
+  "metrics": {
+    "accuracy": 0.9889855072463768,
+    "f1_score": 0.99249901302803,
+    "precision": 0.9858823529411764,
+    "recall": 0.9992050874403816,
+    "confusion_matrix": [
+      [
+        449,
+        18
+      ],
+      [
+        1,
+        1257
+      ]
+    ],
+    "true_negatives": 449,
+    "false_positives": 18,
+    "false_negatives": 1,
+    "true_positives": 1257,
+    "specificity": 0.961456102783726,
+    "npv": 0.9977777777777778,
+    "fpr": 0.03854389721627409,
+    "fnr": 0.000794912559618442,
+    "auc_roc": 0.9997463769349397,
+    "auc_pr": 0.9999055056329147
+  },
+  "error_analysis": {
+    "false_positives": {
+      "count": 18,
+      "categories": {
+        "capsule": 9,
+        "carpet": 1,
+        "grid": 3,
+        "pill": 2,
+        "screw": 2,
+        "toothbrush": 1
+      },
+      "examples": [
+        {
+          "image_path": "fp_1_capsule_003.png",
+          "category": "capsule",
+          "confidence": 0.6115541869449976
+        },
+        {
+          "image_path": "fp_2_capsule_001.png",
+          "category": "capsule",
+          "confidence": 0.5703466398067534
+        },
+        {
+          "image_path": "fp_3_capsule_014.png",
+          "category": "capsule",
+          "confidence": 0.5122887231258961
+        },
+        {
+          "image_path": "fp_4_capsule_004.png",
+          "category": "capsule",
+          "confidence": 0.7441826060662833
+        },
+        {
+          "image_path": "fp_5_capsule_011.png",
+          "category": "capsule",
+          "confidence": 0.6481035560877547
+        }
+      ]
+    },
+    "false_negatives": {
+      "count": 1,
+      "categories": {
+        "capsule": 1
+      },
+      "examples": [
+        {
+          "image_path": "fn_1_capsule_022.png",
+          "category": "capsule",
+          "confidence": 0.5059428987952403
+        }
+      ]
+    },
+    "total_errors": 19,
+    "error_rate": 0.011014492753623189
+  },
+  "key_findings": {
+    "model_name": "phase1_epoch_002",
+    "performance_summary": {
+      "f1_score": 0.99249901302803,
+      "accuracy": 0.9889855072463768,
+      "auc_roc": 0.9997463769349397,
+      "precision": 0.9858823529411764,
+      "recall": 0.9992050874403816
+    },
+    "error_analysis": {
+      "total_errors": 19,
+      "error_rate": 0.011014492753623189,
+      "false_positive_rate": 6.0,
+      "false_negative_rate": 0.3333333333333333
+    },
+    "strengths": [
+      "Good F1 score (>0.8)",
+      "High recall - good at detecting anomalies",
+      "High precision - few false alarms"
+    ],
+    "weaknesses": [],
+    "recommendations": [
+      "Adjust decision threshold to reduce false positives"
+    ]
+  }
+}

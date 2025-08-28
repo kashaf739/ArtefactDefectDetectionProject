@@ -1,0 +1,10 @@
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+app/models/phase1_epoch_007.pth filter=lfs diff=lfs merge=lfs -text
+app/models/model_epoch_3.pth filter=lfs diff=lfs merge=lfs -text
+app/models/phase2_epoch_030.pth filter=lfs diff=lfs merge=lfs -text

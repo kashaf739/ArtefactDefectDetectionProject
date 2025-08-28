@@ -1,0 +1,16 @@
+category,train_good,test_good,test_defects,defect_types,defect_counts,total_images,imbalance_ratio
+metal_nut,220,22,93,"['bent', 'flip', 'color', 'scratch']","{'bent': 25, 'flip': 23, 'color': 22, 'scratch': 23}",335,4.22727272535124
+pill,267,26,141,"['combined', 'pill_type', 'color', 'contamination', 'faulty_imprint', 'crack', 'scratch']","{'combined': 17, 'pill_type': 9, 'color': 25, 'contamination': 21, 'faulty_imprint': 19, 'crack': 26, 'scratch': 24}",434,5.423076920991124
+cable,224,58,92,"['poke_insulation', 'bent_wire', 'cut_outer_insulation', 'combined', 'missing_wire', 'cable_swap', 'cut_inner_insulation', 'missing_cable']","{'poke_insulation': 10, 'bent_wire': 13, 'cut_outer_insulation': 10, 'combined': 11, 'missing_wire': 10, 'cable_swap': 12, 'cut_inner_insulation': 14, 'missing_cable': 12}",374,1.58620689627824
+wood,247,19,60,"['color', 'combined', 'hole', 'liquid', 'scratch']","{'color': 8, 'combined': 11, 'hole': 10, 'liquid': 10, 'scratch': 21}",326,3.1578947351800553
+zipper,240,32,119,"['rough', 'fabric_border', 'squeezed_teeth', 'broken_teeth', 'combined', 'fabric_interior', 'split_teeth']","{'rough': 17, 'fabric_border': 17, 'squeezed_teeth': 16, 'broken_teeth': 19, 'combined': 16, 'fabric_interior': 16, 'split_teeth': 18}",391,3.7187499988378905
+bottle,209,20,63,"['contamination', 'broken_small', 'broken_large']","{'contamination': 21, 'broken_small': 22, 'broken_large': 20}",292,3.149999998425
+toothbrush,60,12,30,['defective'],{'defective': 30},102,2.4999999979166665
+carpet,280,28,89,"['cut', 'metal_contamination', 'thread', 'color', 'hole']","{'cut': 17, 'metal_contamination': 17, 'thread': 19, 'color': 19, 'hole': 17}",397,3.1785714274362245
+capsule,219,23,109,"['faulty_imprint', 'poke', 'scratch', 'squeeze', 'crack']","{'faulty_imprint': 22, 'poke': 21, 'scratch': 23, 'squeeze': 20, 'crack': 23}",351,4.739130432722117
+hazelnut,391,40,70,"['cut', 'crack', 'print', 'hole']","{'cut': 17, 'crack': 18, 'print': 17, 'hole': 18}",501,1.7499999995625
+tile,230,33,84,"['gray_stroke', 'crack', 'glue_strip', 'rough', 'oil']","{'gray_stroke': 16, 'crack': 17, 'glue_strip': 18, 'rough': 15, 'oil': 18}",347,2.5454545446831953
+grid,264,21,57,"['broken', 'thread', 'bent', 'metal_contamination', 'glue']","{'broken': 12, 'thread': 11, 'bent': 12, 'metal_contamination': 11, 'glue': 11}",342,2.714285712993197
+leather,245,32,92,"['poke', 'cut', 'glue', 'fold', 'color']","{'poke': 18, 'cut': 19, 'glue': 19, 'fold': 17, 'color': 19}",369,2.8749999991015622
+transistor,213,60,40,"['cut_lead', 'damaged_case', 'bent_lead', 'misplaced']","{'cut_lead': 10, 'damaged_case': 10, 'bent_lead': 10, 'misplaced': 10}",313,0.6666666665555555
+screw,320,41,119,"['thread_side', 'scratch_head', 'scratch_neck', 'manipulated_front', 'thread_top']","{'thread_side': 23, 'scratch_head': 24, 'scratch_neck': 25, 'manipulated_front': 24, 'thread_top': 23}",480,2.902439023682332

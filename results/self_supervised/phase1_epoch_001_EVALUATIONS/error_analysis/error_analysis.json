@@ -1,0 +1,44 @@
+{
+  "false_positives": {
+    "count": 8,
+    "categories": {
+      "capsule": 5,
+      "leather": 2,
+      "screw": 1
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_capsule_003.png",
+        "category": "capsule",
+        "confidence": 0.6578932116636866
+      },
+      {
+        "image_path": "fp_2_capsule_004.png",
+        "category": "capsule",
+        "confidence": 0.6360517030865336
+      },
+      {
+        "image_path": "fp_3_capsule_013.png",
+        "category": "capsule",
+        "confidence": 0.5087535532571548
+      },
+      {
+        "image_path": "fp_4_capsule_022.png",
+        "category": "capsule",
+        "confidence": 0.5758818197746445
+      },
+      {
+        "image_path": "fp_5_capsule_019.png",
+        "category": "capsule",
+        "confidence": 0.5290665692944189
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 0,
+    "categories": {},
+    "examples": []
+  },
+  "total_errors": 8,
+  "error_rate": 0.00463768115942029
+}

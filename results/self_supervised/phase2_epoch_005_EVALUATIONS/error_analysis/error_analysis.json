@@ -1,0 +1,89 @@
+{
+  "false_positives": {
+    "count": 454,
+    "categories": {
+      "bottle": 20,
+      "cable": 58,
+      "capsule": 23,
+      "carpet": 28,
+      "grid": 17,
+      "hazelnut": 40,
+      "leather": 32,
+      "metal_nut": 22,
+      "pill": 26,
+      "screw": 39,
+      "tile": 30,
+      "toothbrush": 12,
+      "transistor": 60,
+      "wood": 15,
+      "zipper": 32
+    },
+    "examples": [
+      {
+        "image_path": "fp_1_bottle_002.png",
+        "category": "bottle",
+        "confidence": 0.7353247404098511
+      },
+      {
+        "image_path": "fp_2_bottle_016.png",
+        "category": "bottle",
+        "confidence": 0.7099881768226624
+      },
+      {
+        "image_path": "fp_3_bottle_017.png",
+        "category": "bottle",
+        "confidence": 0.7051831483840942
+      },
+      {
+        "image_path": "fp_4_bottle_003.png",
+        "category": "bottle",
+        "confidence": 0.7434906959533691
+      },
+      {
+        "image_path": "fp_5_bottle_015.png",
+        "category": "bottle",
+        "confidence": 0.734931230545044
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 31,
+    "categories": {
+      "cable": 1,
+      "grid": 9,
+      "leather": 1,
+      "screw": 4,
+      "tile": 7,
+      "wood": 9
+    },
+    "examples": [
+      {
+        "image_path": "fn_1_cable_000.png",
+        "category": "cable",
+        "confidence": 0.5012900829315186
+      },
+      {
+        "image_path": "fn_2_grid_001.png",
+        "category": "grid",
+        "confidence": 0.5375564098358154
+      },
+      {
+        "image_path": "fn_3_grid_000.png",
+        "category": "grid",
+        "confidence": 0.5629969835281372
+      },
+      {
+        "image_path": "fn_4_grid_004.png",
+        "category": "grid",
+        "confidence": 0.5336732268333435
+      },
+      {
+        "image_path": "fn_5_grid_005.png",
+        "category": "grid",
+        "confidence": 0.6514276266098022
+      }
+    ]
+  },
+  "total_errors": 485,
+  "error_rate": 0.2811594202898551
+}
